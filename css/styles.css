@@ -25,9 +25,11 @@ p {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Логотип */
@@ -92,6 +94,10 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+
+.header-line {
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* Герой */
@@ -191,6 +197,7 @@ p {
 
 .work-list {
   display: flex;
+  margin-bottom: 94px;
 }
 
 .work-item:not(:last-child) {
@@ -293,6 +300,8 @@ p {
 }
 
 .secondary-button {
+  padding: 6px 22px;
+
   background-color: var(--team-section-background);
   color: var(--title-text-color);
   border-color: transparent;
@@ -319,7 +328,6 @@ p {
 .project-card {
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid #eeeeee;
 }
 
 .project-card:nth-child(3n) {
@@ -334,13 +342,9 @@ p {
   text-decoration: none;
 }
 
-.project-thumb {
-  margin-bottom: 20px;
-}
-
 .project-title {
-  margin-left: 24px;
   margin-bottom: 4px;
+  margin-top: 0;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -350,9 +354,15 @@ p {
 }
 
 .project-description {
-  margin-left: 24px;
-  margin-bottom: 20px;
-
   color: var(--main-text-color);
   line-height: 1.9;
+}
+
+.card-image {
+  display: block;
+}
+
+.card-border {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
